@@ -1,0 +1,22 @@
+.barContainer {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7vh;
+  width: 100vw;
+  top: 0;
+  z-index: 1000;
+  background-color: azure;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sideSpacer {
+  width: 10vw;
+  margin: 2vw;
+}

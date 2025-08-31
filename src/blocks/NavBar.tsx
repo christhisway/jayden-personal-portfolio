@@ -1,13 +1,8 @@
-import React from "react";
 import {
   NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 import { Link } from "@radix-ui/react-navigation-menu";
 import "../styles/NavBar.css";
@@ -22,22 +17,24 @@ const NavBar = () => {
 
   return (
     <div className="barContainer">
-      <div className="sideSpacer">Jayden Webb</div>
+      <div className="sideSpacer item" onClick={() => handleScroll("hero")}>
+        Jayden Webb
+      </div>
       <NavigationMenu>
         <NavigationMenuList className="list">
-          <NavigationMenuItem>
+          <NavigationMenuItem className="item">
             <NavigationMenuLink>
               <Link onClick={() => handleScroll("aboutSection")}>About</Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
-          <NavigationMenuItem>
+          <NavigationMenuItem className="item">
             <NavigationMenuLink>
               <Link onClick={() => handleScroll("classesSection")}>
                 Classes
               </Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
-          <NavigationMenuItem>
+          <NavigationMenuItem className="item">
             <NavigationMenuLink>
               <Link onClick={() => handleScroll("skillsSection")}>Skills</Link>
             </NavigationMenuLink>

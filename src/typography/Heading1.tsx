@@ -1,12 +1,10 @@
-import React from "react";
-
 interface Heading1Props {
   text: string;
 }
 
 const Heading1 = (props: Heading1Props) => {
   return (
-    <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight text-balance m-10">
+    <h1 className="scroll-m-20 text-7xl font-extrabold tracking-tight text-balance">
       {props.text}
     </h1>
   );

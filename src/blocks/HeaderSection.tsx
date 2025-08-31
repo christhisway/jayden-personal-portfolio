@@ -16,7 +16,7 @@ const HeaderSection = () => {
         </div>
         <div>
           <img
-            src="src/assets/Open Headshot.jpeg"
+            src="/Open Headshot.jpeg"
             className="rounded-lg shadow-lg max-w-xs w-full h-auto object-cover"
           />
         </div>
